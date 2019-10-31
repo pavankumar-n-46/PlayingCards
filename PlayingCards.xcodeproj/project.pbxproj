@@ -13,6 +13,8 @@
 		91682942236B01D000BA5566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91682940236B01D000BA5566 /* Main.storyboard */; };
 		91682944236B01D100BA5566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91682943236B01D100BA5566 /* Assets.xcassets */; };
 		91682947236B01D100BA5566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91682945236B01D100BA5566 /* LaunchScreen.storyboard */; };
+		91682950236B033200BA5566 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9168294F236B033200BA5566 /* PlayingCard.swift */; };
+		91B8A1FB236B071C00979AC9 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8A1FA236B071C00979AC9 /* PlayingCardDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		91682943236B01D100BA5566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91682946236B01D100BA5566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91682948236B01D100BA5566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9168294F236B033200BA5566 /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
+		91B8A1FA236B071C00979AC9 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		91682939236B01D000BA5566 /* PlayingCards */ = {
 			isa = PBXGroup;
 			children = (
-				9168293A236B01D000BA5566 /* AppDelegate.swift */,
-				9168293C236B01D000BA5566 /* SceneDelegate.swift */,
+				9168294E236B031700BA5566 /* Supporting files */,
+				91B8A1F9236B06FB00979AC9 /* Model */,
 				9168293E236B01D000BA5566 /* ViewController.swift */,
 				91682940236B01D000BA5566 /* Main.storyboard */,
 				91682943236B01D100BA5566 /* Assets.xcassets */,
-				91682945236B01D100BA5566 /* LaunchScreen.storyboard */,
 				91682948236B01D100BA5566 /* Info.plist */,
 			);
 			path = PlayingCards;
+			sourceTree = "<group>";
+		};
+		9168294E236B031700BA5566 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				9168293A236B01D000BA5566 /* AppDelegate.swift */,
+				9168293C236B01D000BA5566 /* SceneDelegate.swift */,
+				91682945236B01D100BA5566 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		91B8A1F9236B06FB00979AC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9168294F236B033200BA5566 /* PlayingCard.swift */,
+				91B8A1FA236B071C00979AC9 /* PlayingCardDeck.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +117,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1110;
-				ORGANIZATIONNAME = "https://github.com/pavankumar-n-46";
+				ORGANIZATIONNAME = "https://github.com/pavankumar-n-46 .";
 				TargetAttributes = {
 					91682936236B01D000BA5566 = {
 						CreatedOnToolsVersion = 11.1;
@@ -140,6 +162,8 @@
 			files = (
 				9168293F236B01D000BA5566 /* ViewController.swift in Sources */,
 				9168293B236B01D000BA5566 /* AppDelegate.swift in Sources */,
+				91B8A1FB236B071C00979AC9 /* PlayingCardDeck.swift in Sources */,
+				91682950236B033200BA5566 /* PlayingCard.swift in Sources */,
 				9168293D236B01D000BA5566 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
