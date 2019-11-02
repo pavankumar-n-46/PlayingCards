@@ -18,6 +18,17 @@ class PlayingCardView: UIView {
     @IBInspectable
     var isFaceUp = true { didSet { setNeedsLayout(); setNeedsDisplay()}}
     
+    private var faceCardScale = SizeRatio.faceCardImageSizeToBoundsSize { didSet { setNeedsDisplay() }}
+    
+    @objc func adjustFaceCardScale(byHandlingGestureRecognizerBy recognier: UIPinchGestureRecognizer) {
+        switch recognier.state {
+        case .changed,.ended :
+            faceCardScale *= recognier.scale
+            recognier.scale = 1.0
+        default : break
+        }
+    }
+    
     private var cornerString : NSAttributedString {
         return centeredAttributedString(rankString+"\n"+suit, fontSize: cornerFontSize)
     }
@@ -117,7 +128,7 @@ class PlayingCardView: UIView {
         if isFaceUp {
             if let faceCardImage = UIImage(named: rankString+suit,
                                            in: Bundle(for:self.classForCoder), compatibleWith: traitCollection) {
-                faceCardImage.draw(in: bounds.zoom(by: SizeRatio.faceCardImageSizeToBoundsSize))
+                faceCardImage.draw(in: bounds.zoom(by: faceCardScale))
             } else {
                 drawPips()
             }
