@@ -51,6 +51,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		91106A41236D861A00B371AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9168293E236B01D000BA5566 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		9168292E236B01D000BA5566 = {
 			isa = PBXGroup;
 			children = (
@@ -70,10 +78,10 @@
 		91682939236B01D000BA5566 /* PlayingCards */ = {
 			isa = PBXGroup;
 			children = (
-				91106A3E236D49D900B371AF /* View */,
 				9168294E236B031700BA5566 /* Supporting files */,
+				91106A3E236D49D900B371AF /* View */,
 				91B8A1F9236B06FB00979AC9 /* Model */,
-				9168293E236B01D000BA5566 /* ViewController.swift */,
+				91106A41236D861A00B371AF /* Controller */,
 				91682940236B01D000BA5566 /* Main.storyboard */,
 				91682943236B01D100BA5566 /* Assets.xcassets */,
 				91682948236B01D100BA5566 /* Info.plist */,

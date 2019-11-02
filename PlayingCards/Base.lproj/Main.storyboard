@@ -16,16 +16,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="egT-Ke-zcc" customClass="PlayingCardView" customModule="PlayingCards" customModuleProvider="target">
-                                <rect key="frame" x="20" y="44" width="374" height="818"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="20" y="154" width="374" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="800" id="eIu-m8-5Yi"/>
+                                    <constraint firstAttribute="width" secondItem="egT-Ke-zcc" secondAttribute="height" multiplier="5:8" id="ihx-2q-scE"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="egT-Ke-zcc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1ow-WI-CqH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="egT-Ke-zcc" secondAttribute="trailing" constant="20" id="F3I-nd-5wt"/>
-                            <constraint firstItem="egT-Ke-zcc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fJ4-lI-34C"/>
-                            <constraint firstItem="egT-Ke-zcc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="muQ-Ec-mE8"/>
+                            <constraint firstItem="egT-Ke-zcc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="UaH-L3-2vo"/>
+                            <constraint firstItem="egT-Ke-zcc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="g3O-05-2CM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="egT-Ke-zcc" secondAttribute="trailing" constant="20" id="lR6-hE-Oe2"/>
+                            <constraint firstItem="egT-Ke-zcc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="qaR-Hh-Wid"/>
+                            <constraint firstItem="egT-Ke-zcc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uuo-rF-hfh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="egT-Ke-zcc" secondAttribute="bottom" constant="20" id="zcS-Pf-2Ff"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
